@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <title>Stories. </title>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
+	<link rel="stylesheet" href="css/style.css"/>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
+    
+    <link rel="image_src" href="https://sergeartemyev.itsinsta.site/img/og/og.jpg" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sergeartemyev.itsinsta.site" />
+    <meta property="og:image" content="https://sergeartemyev.itsinsta.site/img/og/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="150"/>
+    <meta property="og:image:height" content="150"/>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:locale" content="Ru-ru" />
+    <meta property="og:site_name" content="sergeartemyev" />
+
+    <!--modernizr-->
+	<script src="js/vendors/modernizr-custom.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+        </p>
+    <![endif]-->
+    <noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
+    </noscript>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="header__left">
+						<div class="header__logo">
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/79374454_2705598383001648_2270089863195787264_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=AjyNkV3FIYwAX-HIId6&oh=09487c5b87db0e560f9bcf8ed5c674d0&oe=5E9C2743" alt="Сергей Артемьев" /></div>
+							<div class="header__logo-txt">sergeartemyev</div>
+						</div>
+						<div class="header__title"></div>
+					</div>
+				</div>
+			</div>
+		</header>	
+		<div class="main-sec">
+			<div class="container">
+				<div class="main-sec__wrap">
+					<div class="main-sec__txt">
+						<p>&nbsp;</p>
+						<div class="search">
+							<input type="search" class="input search__input" placeholder="Story">
+							<button id="btn_save" class="btn search__btn" type="submit" title="Сохранить"><i class="fa fa-save" aria-hidden="true"></i></button>
+							<p>&nbsp;</p>
+							<button id="btn_delete" class="btn search__btn" type="submit" title="Удалить"><i class="fa fa-remove" aria-hidden="true"></i></button>
+							<p>&nbsp;
+								<div id="choosen">0</div> / <div id="total">0</div>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="stories">
+			<div class="container">
+				<div class="stories__slider-wrap">
+					<div class="stories__slider" id="js-stories-slider">
+						<div class="swiper-wrapper">
+						</div>
+					</div>
+					<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+					<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="items" id="js-items">
+			<div class="container">
+				<div class="items-main" id="js-items-main">
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="put--geroyax-chast--2" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/82181161_1168098436726320_4370635527693478567_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100&_nc_ohc=pjp4AZirWwwAX8P9ZWp&oh=bb4bc562d462dd26f09e2ff4a5ea20d4&oe=5EB059F5" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="ПУТЬ ГЕРОЯ, часть 2">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="m-i-zhx-voyna-polov---2xx" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/79280069_206716763691092_3833956070440134743_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=TzG31f8V2IQAX8LA5i_&oh=9a01c01ce8649eb28d13ce65ed3ec873&oe=5EA65A10" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="М и Ж: война полов - 2⚔️">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="put--geroya" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/77118542_504420490180383_3330316072063454973_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=o4QPSyMwQqsAX_k-6n0&oh=37730e47e1d071e1a05ed83dc4c64975&oe=5E9BF8A3" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="ПУТЬ ГЕРОЯ">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="deda-moroza-ne-byvaet" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/78989390_223043042021922_8924900967163520809_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=106&_nc_ohc=oXvIiJrYP7cAX8ruFE2&oh=b2a09c897d8c62a6b2116d79ef0b24bf&oe=5E90137B" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Деда Мороза не бывает?">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="kak-otdykhat--na-100x" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/79260437_500175984181016_8010141863502730414_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=r9Z6prIMv3gAX-B5OGl&oh=0284c25378a5dd811d5fbebc75183b35&oe=5EA07824" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="КАК ОТДЫХАТЬ НА 100%?">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="do-novogo-goda-ostayotsya-10-dneyxx" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/80794716_838948993206280_7518518671685405123_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=sU-YIguWOngAX_Sz5lR&oh=5476ec4cee4087c84b61ec107bdb8002&oe=5EA87476" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="До нового года остаётся 10 дней😳">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="m-i-zhx-voyna-polovxx" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/79006441_192088508507297_2185967220197503485_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=LWzI0CaUedYAX-zckKF&oh=c4498521b2d73e1ad7308b7b79cee5d8&oe=5EA990AA" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="М и Ж: война полов⚔️">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="prodolzhaem-temu-upravleniya-udachey" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/73470554_595118111031766_6467729710301289968_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=110&_nc_ohc=Ksj_gCtw8aYAX9ofI9C&oh=3909b4e34e5aa8f3a57282409a8e0399&oe=5E0B6C19" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Продолжаем тему управления удачей">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="otkuda-brat--energiyu" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/72246664_463565704179040_3533998233964553464_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=qiwpKVSjlN4AX_lr3mY&oh=2d57223db0d79aa412319e8e9ba3d05d&oe=5E920733" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Откуда брать энергию:">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="kak-ne-oblazhat-sya-pri-vybore-psikhologa" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/75223569_586298272127496_2046225352770037695_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100&_nc_ohc=Tcb4Qifp8bcAX_0k5l4&oh=aa4a62508bcc8bb90f082033dd375636&oe=5EAA5353" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Как не облажаться при выборе психолога?">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="proshlykh-zhizney-ne-sushchestvuet" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/72490019_2864199350266403_5660142067676814976_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=mlsDqi9RlRkAX_VE9Jy&oh=b1aa4700f08d5eb0e406e6abf28462ef&oe=5E9FAB1A" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="ПРОШЛЫХ ЖИЗНЕЙ НЕ СУЩЕСТВУЕТ?">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="x-3-kriteriya-upravleniya-udachey" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/75208767_967782106939605_4905210938548504819_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=yEf2NnZuqs8AX-QYnqk&oh=d101dcb0de8e1b4f4203615337226ce7&oe=5E0B645C" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="⠀
+3 критерия управления удачей:">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="pochemu-95x-lyudey-ne-umeyut" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/79516917_120515095793811_7861221898815022286_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=WCRYcyNBG6oAX_a2qbK&oh=e6b18764bad24b9d8a29401eb2fda4de&oe=5EA29E64" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="ПОЧЕМУ 95% ЛЮДЕЙ НЕ УМЕЮТ">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="2020---chto" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/79390486_149936473010145_8607371325425611772_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=tUh7s7iFzqEAX--hn4o&oh=865c9a66e90144ea19e9845354f23673&oe=5E8DA17B" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="2020 - что?">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="treningi-ne-rabotayut" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/80040506_187810552269203_5959891313659340529_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=UjV06l6YlF0AX-8DVrL&oh=54e16350bb45abefb366284bf82a12e5&oe=5E96E290" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="ТРЕНИНГИ НЕ РАБОТАЮТ?">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="bespretsedentnaya-razdacha-slonov" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/72260260_785802545166173_8908033390687602578_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=Fr5305DmFRQAX_IvGtu&oh=9bcb9d47c4c065f59fcc29c9afc64497&oe=5EAA160C" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="БЕСПРЕЦЕДЕНТНАЯ раздача слонов!">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="bol-shaya-stirka-s-sergeem" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/75358231_478873679416785_1037648568791144900_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=1FxndOfXolcAX_P1pDo&oh=93038507836ae881cb433c2d88aef9fb&oe=5E930F06" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Большая стирка с Сергеем">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+					<div class="items-item">
+						<label class="items-item__wrap items-item__check">
+							<input id="chto-delat-x-esli-vy-pro" type="checkbox" />
+							<div class="items-item__pic">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/75319182_103422641080185_5776553602457268218_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=KoSvDaMHkqQAX-nk64c&oh=2f6b83ac06cf5d98745e56ecdc204a00&oe=5EA43C1C" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Что делать, если вы про.">
+								<ul class="items-item__taglist">
+								</ul>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!--swiper-->
+	<script src="js/vendors/swiper.min.js"></script>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="js/vendors/jquery.lazyloadxt.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+
+	<script type="text/javascript">
+var currentTitle = '';
+var tags = {
+};
+
+function cleanupItems() {
+	$(".items-item").each(function() {
+		$(this).find("input").prop("checked", false);
+	});
+}
+
+function refreshStories() {
+	$(".stories__slide").each(function() {
+		var checkbox = $(this).find("input");
+
+		if ($(this).prop("title") != currentTitle) {
+			checkbox.prop("checked", false);
+		} else if (!$(this).is(':checked')) {
+			checkbox.prop("checked", true);
+		}
+	});
+
+	resizeSwiper();
+}
+
+function refreshChoosen() {
+	if (currentTitle == ''  || tags[currentTitle] == null) {
+		$("#choosen").text(0);
+	} else {
+		$("#choosen").text(tags[currentTitle].length);
+	}
+}
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
+var storyClick = function () {
+	var title = $(this).closest(".stories__slide").prop("title");
+	if ($(this).is(':checked')) {
+		currentTitle = title;
+
+		refreshStories();
+
+		// Set all choosen blocks.
+		if (tags[currentTitle] != null) {
+			$(".items-item").each(function() {
+				var checkbox = $(this).find("input");
+				checkbox.prop("checked", $.inArray(checkbox.prop("id"), tags[currentTitle]) !== -1);
+			});
+		} else {
+			cleanupItems();
+		}
+	} else {
+		currentTitle = '';
+
+		cleanupItems();
+	}
+	$(".search__input").val(currentTitle);
+	refreshChoosen();
+}
+
+function setStoryBackground(title) {
+	$(".stories__slide").each(function() {
+		if ($(this).prop("title") == title) {
+			var divPic = $(this).find('.stories__slide-pic');
+
+			var img = getStoryBackground(title);
+			divPic.css("background-image", "url(" + img + ")");
+		}
+	});
+}
+
+function getStoryBackground(title) {
+	if (title == null) {
+		return null;
+	}
+
+	var tag = tags[title][0];
+
+	var item = $(".items-item").filter(function() {
+		return $(this).find("input").prop("id") == tag;
+	}).first();
+
+	var url = item.find("img").attr('data-src');
+	if (typeof url !== typeof undefined && url !== false) {
+		return url;
+	}
+	return item.find("img").prop('src');
+}
+
+function addStory(title) {
+	$(".swiper-wrapper").prepend(`
+							<div class="swiper-slide">
+								<div class="stories__slide" title="` + title + `">
+									<label class="stories__slide__check">
+										<input type="checkbox" />
+										<div class="stories__slide-pic" style=""></div>
+										<div class="stories__slide-txt">` + title + `</div>
+									</label>
+								</div>
+							</div>
+`);
+	var added = $(".swiper-slide").first();
+	added.width(added.height());
+	added.find("input").click(storyClick);
+}
+
+function loadStories() {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories",
+		type: "GET",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); },
+		success: function (data) { 
+			tags = {};
+			$(".stories__slide").remove();
+
+			$.each(data, function(index, element) {
+				tags[element.title] = element.posts;
+
+				addStory(element.title);
+
+				setStoryBackground(element.title);
+			});
+
+			setTimeout(function(){
+				resizeSwiper();
+			}, 1000);
+		}
+	});
+}
+
+function linkStoryPost(story, post) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story + "/link/" + post,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function unlinkStoryPost(story, post) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story + "/unlink/" + post,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function createStory(story) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function renameStory(story, newStory) {
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + story + "/rename/" + newStory,
+		type: "POST",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+function resizeSwiper(){
+	swiper.update();
+}
+
+function deleteStory(storyTitle) {
+	tags[storyTitle] = [];
+
+	var story = $(".stories__slide").filter(function() {
+		return $(this).prop("title") == storyTitle;
+	}).first().parent();
+			
+	story.remove();
+
+	cleanupItems();
+
+	resizeSwiper();
+
+	if (key == null) {
+		return;
+	}
+
+	$.ajax({
+		url: "https://admapi.itsinsta.site/api/stories/" + storyTitle,
+		type: "DELETE",
+		dataType: 'json',
+		beforeSend: function(xhr) { xhr.setRequestHeader('key', key); }
+	});
+}
+
+$(document).ready(function() {
+	key = getUrlParameter("key");
+
+	loadStories();
+
+	$("#total").text($(".items-item").length);
+
+    $(".stories__slide").each(function() {
+		$(this).find("input").click(storyClick);
+	});
+
+    $(".items-item").each(function() {
+		$(this).find("input").click(function() {
+			if (currentTitle != '') {
+				var id = $(this).prop("id");
+
+				if ($(this).is(':checked')) {
+					if (tags[currentTitle] == null) {
+						tags[currentTitle] = [ id ];
+					} else {
+						tags[currentTitle] = $.merge(tags[currentTitle], [ id ]);
+					}
+
+					linkStoryPost(currentTitle, id);
+				} else {
+					tags[currentTitle] = $(tags[currentTitle]).not([ id ]).get();
+
+					unlinkStoryPost(currentTitle, id);
+				}
+
+				if (tags[currentTitle].length == 1) {
+					setStoryBackground(currentTitle);
+				}
+
+				$("#choosen").text(tags[currentTitle].length);
+			} else {
+				$(this).prop("checked", false);
+			}
+		});
+	});
+
+	$("#btn_save").click(function(){
+		var newTitle = $(".search__input").val();
+
+		if (currentTitle != '' && newTitle != '') {
+			tags[newTitle] = tags[currentTitle];
+
+			var story = $(".stories__slide").filter(function(){
+				return $(this).prop("title") == currentTitle;
+			}).first();
+			story.prop("title", newTitle);
+
+			story.find(".stories__slide-txt").text(newTitle);
+
+			renameStory(currentTitle, newTitle);
+
+			currentTitle = newTitle;
+		} else if (currentTitle != '' && newTitle == '') {
+			deleteStory(currentTitle);
+
+			currentTitle = '';
+			cleanupItems();
+		} else if (currentTitle == '' && newTitle != '') {
+			var stories = $(".stories__slide").filter(function() {
+				return $(this).prop("title") == newTitle;
+			});
+
+			if (stories.length == 0) {
+				currentTitle = newTitle;
+
+				addStory(newTitle);
+
+				refreshStories();
+
+				createStory(currentTitle);
+			}
+		}
+	});
+
+	$("#btn_delete").click(function(){
+		if (currentTitle == '') {
+			return;
+		}
+
+		deleteStory(currentTitle);
+
+		currentTitle = '';
+		cleanupItems();
+
+		$(".search__input").val('');
+	});
+});
+	</script>
+</body>
+</html>
